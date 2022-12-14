@@ -135,11 +135,6 @@ def port_validation(port):
         print(f"{port} - не число")
         return False
 
-
-logging.basicConfig(filename='logs/client.log',
-                    format="%(asctime)s [%(levelname)s] %(funcName)s: %(message)s", level=logging.INFO)
-
-
 def main():
     user_port = input("Введите порт сервера (enter для значения по умолчанию):")
     user_ip = input("Введите IP-адрес сервера (enter для значения по умолчанию):")
